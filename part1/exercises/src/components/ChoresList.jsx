@@ -1,3 +1,19 @@
+import React from 'react';
+import classes from "./ChoresList.module.css"
+
 export default function ChoresList () {
-   return <p>No content is here!</p>;
+   return (
+      <div>
+         <h3 className={classes.choresHeader}>Chore List</h3>
+         <ol>
+            <li className={classes.choresText}>Do the dishes</li>
+            <li className={classes.choresText}>Take out the trash</li>
+            <li className={classes.choresText}>Vacuum</li>
+            <li className={classes.choresText}>Laundry</li>
+            <li className={classes.choresText}>Cut the grass</li>
+            <li className={classes.choresText}>Set up router</li>
+            <li className={classes.choresText}>Trip planning</li>
+         </ol>
+      </div>
+   );  
 }
