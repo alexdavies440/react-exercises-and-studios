@@ -1,13 +1,19 @@
 .choresText {
    color: rgb(111, 0, 255);
-   font-size: 2vw;
+   font-size: 1.3vw;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
-   text-align: left;
 }
 
 .choresHeading {
    color: black; 
    text-decoration: underline;
    font-style: italic;
+}
+
+.choresHeading, .choresText {
    text-align: left;
+}
+
+.choresList {
+   backdrop-filter: drop-shadow(8px 8px 10px green);
 }

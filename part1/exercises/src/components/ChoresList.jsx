@@ -3,7 +3,7 @@ import classes from "./ChoresList.module.css"
 
 export default function ChoresList () {
    return (
-      <div>
+      <div className={classes.choresList}>
          <h3 className={classes.choresHeading}>Chore List</h3>
          <ol>
             <li className={classes.choresText}>Do the dishes</li>
