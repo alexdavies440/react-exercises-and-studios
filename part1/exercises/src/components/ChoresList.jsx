@@ -4,7 +4,7 @@ import classes from "./ChoresList.module.css"
 export default function ChoresList () {
    return (
       <div>
-         <h3 className={classes.choresHeader}>Chore List</h3>
+         <h3 className={classes.choresHeading}>Chore List</h3>
          <ol>
             <li className={classes.choresText}>Do the dishes</li>
             <li className={classes.choresText}>Take out the trash</li>
