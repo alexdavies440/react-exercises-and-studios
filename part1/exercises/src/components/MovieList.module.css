@@ -9,6 +9,6 @@
    text-align: left;
 }
 
-/* div {
-   font-size: larger;
-} */
+.movieHeading, .movieText {
+   margin: 10px;
+}
