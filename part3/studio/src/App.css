@@ -49,3 +49,12 @@
 .imageUpdates {
   object-fit: contain;
 }
+
+.recipeDescription {
+  margin: 30px;
+  text-align: left;
+}
+
+.ingredients {
+  text-align: left;
+}

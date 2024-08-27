@@ -4,17 +4,18 @@ export default function BoardAssignment() {
    const boards = [
       {
          "label": "Tasty",
-         "value": "???"
+         "value": "Tasty"
       },
       {
          "label": "Cookies for Days",
-         "value": "???"
+         "value": "Cookies for Days"
 
       },
       { "label": "Mom on Timeout",
-         "value": "???"
+         "value": "Mom on Timeout"
       }
    ];
+
    const [boardName, setName] = useState('no boards yet!');
    const handleChange = (event) => {
       setName(event.target.value);
@@ -24,7 +25,12 @@ export default function BoardAssignment() {
       <div style={{ paddingTop: "50px" }}>
          <label>Save to Board: </label>
          <select value={boardName} onChange={handleChange}>
-            <option value={boards.value}>{boards.label}</option>
+            {boards.map((callback) => {
+               return (
+                  <option value={callback.value}>{callback.label}</option>
+               );
+            })}
+            
          </select>
 
          <p>Saved to {boardName}!</p>
