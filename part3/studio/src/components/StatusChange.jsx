@@ -5,12 +5,13 @@ export default function StatusChange () {
    const [recipeStatus, setRecipeStatus] = useState(false);
 
    const handleChange = (event) => {
-      return setNotes(event.target.value);
+      setNotes(event.target.value);
    }
 
    const handleSubmit = (event) => {
+      
       event.preventDefault();
-      return setRecipeStatus(true)
+      setRecipeStatus(true)
    }
 
    return (
@@ -20,6 +21,8 @@ export default function StatusChange () {
             </label>
             <input type="submit" />
          </form>
+         
+         <p>{recipeStatus ? handleChange : null}</p>
 
          <p>My Recipe Notes aren't here!</p>
 
