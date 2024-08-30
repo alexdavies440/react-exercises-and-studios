@@ -3,7 +3,7 @@ import { useState } from 'react';
 export default function StatusChange () {
    const [notes, setNotes] = useState("");
    const [recipeStatus, setRecipeStatus] = useState(false);
-   const noteList = [];
+   
 
    const handleChange = (event) => {
     
@@ -32,7 +32,7 @@ export default function StatusChange () {
          
          <p>My Recipe Notes:</p>
 
-         <p id='notes'><createList /></p>
+         <p id='notes'></p>
 
          <p>I {recipeStatus ? "have" : "have not"}  tried this recipe!</p>
       </div>
