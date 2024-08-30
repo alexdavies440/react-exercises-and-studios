@@ -58,3 +58,10 @@
 .ingredients {
   text-align: left;
 }
+
+#notes {
+  padding: 5%;
+  margin-right: 20%;
+  margin-left: 20%;
+  border: solid;
+}

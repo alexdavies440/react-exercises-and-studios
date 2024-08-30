@@ -3,6 +3,10 @@ import { useState } from 'react';
 export default function BoardAssignment() {
    const boards = [
       {
+         "label": "Choose =>",
+         "value": null
+      },
+      {
          "label": "Tasty",
          "value": "Tasty"
       },
