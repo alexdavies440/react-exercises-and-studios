@@ -1,13 +1,15 @@
 let stars = ["⭐", "⭐ ⭐", "⭐ ⭐ ⭐", "⭐ ⭐ ⭐ ⭐", "⭐ ⭐ ⭐ ⭐ ⭐"];
 
-function RateARecipe(props) {
+function RateARecipe() {
   function GiveRating(props) {
     return <h3>{stars[props.rating -1]}</h3>
   }
+  GiveRating
   return stars;
 }
 
 export default RateARecipe;
 
 //conditional to render stars based on a number provided in App.js 
-({props} >= 1 && {props} <= 5) ? <GiveRating props={5}/> : null 
+
+4 >= 1 && 4 <= 5 ? RateARecipe() : null;
